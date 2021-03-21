@@ -1,0 +1,58 @@
+$naam: #00274e;
+$textCntClr: #323232;
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+
+.content-img{
+    float: right;
+    width: 480px;
+}
+
+.content{
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    h2{
+        color: $textCntClr;
+    }
+    p{
+        color: $textCntClr;
+    }
+}
+
+header{
+    width: 960px;
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: $naam;
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                font-size: 30px;
+                &:hover{
+                    background-color: #325c84;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 0 25px;
+                    
+                }
+            }
+        }
+}
+
