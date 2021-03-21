@@ -8,15 +8,24 @@ body {
   background-color: grey;
 }
 
+main {
+  width: 960px;
+  display: block;
+  margin: 0 auto;
+}
+
 .content-img {
   float: right;
   width: 480px;
 }
 
 .content {
-  width: 960px;
-  display: block;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffffff;
 }
 
@@ -30,9 +39,6 @@ body {
 
 header {
   width: 960px;
-  background-image: url("../images/header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 nav {
@@ -56,5 +62,15 @@ nav ul li a {
   text-decoration: none;
   color: white;
   padding: 0 25px;
+}
+
+footer {
+  background-color: #00274e;
+}
+
+footer p {
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

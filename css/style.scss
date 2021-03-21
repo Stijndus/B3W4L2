@@ -1,4 +1,4 @@
-$naam: #00274e;
+$mainbgcolor: #00274e;
 $textCntClr: #323232;
 
 * {
@@ -11,15 +11,20 @@ body{
     background-color: grey;
 }
 
+main{
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+}
+
 .content-img{
     float: right;
     width: 480px;
 }
 
 .content{
-    width: 960px;
-    display: block;
-    margin: 0 auto;
+    display:flex;
+    align-items:center;
     background-color: #ffffff;
     h2{
         color: $textCntClr;
@@ -31,13 +36,10 @@ body{
 
 header{
     width: 960px;
-    background-image: url('../images/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 nav {
-    background-color: $naam;
+    background-color: $mainbgcolor;
         ul{
             text-align: center;
             li{
@@ -56,3 +58,11 @@ nav {
         }
 }
 
+footer{
+    background-color: $mainbgcolor;
+    p{
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+}

@@ -9,19 +9,20 @@
 </head>
 
 <body>
-    <div class="content">
+    <main>
         <?php include 'includes/header.php' ?>
-        <?php 
+        <div class="content">
+            <?php 
 
         if(empty($_GET)){
           include_once 'pages/onderwerp1.php';
         } else {
           include_once($_GET['content']);
         }
-        
         ?>
+        </div>
         <?php include 'includes/footer.php' ?>
-    </div>
+    </main>
 </body>
 
 </html>s
